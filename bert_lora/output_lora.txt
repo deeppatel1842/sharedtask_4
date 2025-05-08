@@ -1,0 +1,93 @@
+=== CUDA & GPU ===
+Tue Apr 29 19:40:23 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.05              Driver Version: 560.35.05      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    Off |   00000000:17:00.0 Off |                    0 |
+| N/A   33C    P0             79W /  350W |     485MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA L40S                    Off |   00000000:65:00.0 Off |                    0 |
+| N/A   35C    P0             78W /  350W |     433MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA L40S                    Off |   00000000:CA:00.0 Off |                    0 |
+| N/A   32C    P0             78W /  350W |   43890MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA L40S                    Off |   00000000:E3:00.0 Off |                    0 |
+| N/A   32C    P0             79W /  350W |     862MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A   2547282      C   python                                        476MiB |
+|    1   N/A  N/A   2547282      C   python                                        424MiB |
+|    2   N/A  N/A   2520947      C   python                                      43452MiB |
+|    2   N/A  N/A   2547282      C   python                                        424MiB |
+|    3   N/A  N/A   2520947      C   python                                        424MiB |
+|    3   N/A  N/A   2547282      C   python                                        424MiB |
++-----------------------------------------------------------------------------------------+
+2.1.2+cu118
+CUDA available: True
+NVIDIA L40S
+Model is now using LoRA!
+trainable params: 1,774,085 || all params: 68,731,402 || trainable%: 2.5812
+{'loss': 1.5683, 'grad_norm': 1.4558618068695068, 'learning_rate': 2.8887640449438203e-05, 'epoch': 0.19}
+{'loss': 1.4336, 'grad_norm': 3.3761770725250244, 'learning_rate': 2.7764044943820225e-05, 'epoch': 0.37}
+{'loss': 1.2885, 'grad_norm': 3.87209153175354, 'learning_rate': 2.664044943820225e-05, 'epoch': 0.56}
+{'loss': 1.2483, 'grad_norm': 3.6970713138580322, 'learning_rate': 2.551685393258427e-05, 'epoch': 0.75}
+{'loss': 1.2127, 'grad_norm': 4.859217643737793, 'learning_rate': 2.439325842696629e-05, 'epoch': 0.94}
+{'loss': 1.2049, 'grad_norm': 4.844188690185547, 'learning_rate': 2.3269662921348316e-05, 'epoch': 1.12}
+{'loss': 1.1588, 'grad_norm': 3.3644156455993652, 'learning_rate': 2.2146067415730338e-05, 'epoch': 1.31}
+{'loss': 1.1725, 'grad_norm': 5.809773921966553, 'learning_rate': 2.102247191011236e-05, 'epoch': 1.5}
+{'loss': 1.1661, 'grad_norm': 3.5982842445373535, 'learning_rate': 1.9898876404494385e-05, 'epoch': 1.69}
+{'loss': 1.1763, 'grad_norm': 3.39385986328125, 'learning_rate': 1.8775280898876403e-05, 'epoch': 1.87}
+{'loss': 1.1667, 'grad_norm': 4.725869178771973, 'learning_rate': 1.7651685393258425e-05, 'epoch': 2.06}
+{'loss': 1.1529, 'grad_norm': 4.189094543457031, 'learning_rate': 1.652808988764045e-05, 'epoch': 2.25}
+{'loss': 1.1673, 'grad_norm': 3.571317672729492, 'learning_rate': 1.5404494382022472e-05, 'epoch': 2.43}
+{'loss': 1.1193, 'grad_norm': 3.890416145324707, 'learning_rate': 1.4280898876404494e-05, 'epoch': 2.62}
+{'loss': 1.136, 'grad_norm': 4.992584705352783, 'learning_rate': 1.3157303370786516e-05, 'epoch': 2.81}
+{'loss': 1.1061, 'grad_norm': 2.862672805786133, 'learning_rate': 1.203370786516854e-05, 'epoch': 3.0}
+{'loss': 1.1052, 'grad_norm': 4.295665264129639, 'learning_rate': 1.0910112359550562e-05, 'epoch': 3.18}
+{'loss': 1.1042, 'grad_norm': 4.968108177185059, 'learning_rate': 9.786516853932585e-06, 'epoch': 3.37}
+{'loss': 1.1313, 'grad_norm': 4.08615779876709, 'learning_rate': 8.662921348314607e-06, 'epoch': 3.56}
+{'loss': 1.1496, 'grad_norm': 4.381937026977539, 'learning_rate': 7.539325842696629e-06, 'epoch': 3.75}
+{'loss': 1.1004, 'grad_norm': 3.2087292671203613, 'learning_rate': 6.426966292134832e-06, 'epoch': 3.93}
+{'loss': 1.098, 'grad_norm': 4.286808967590332, 'learning_rate': 5.303370786516854e-06, 'epoch': 4.12}
+{'loss': 1.0904, 'grad_norm': 5.7352190017700195, 'learning_rate': 4.179775280898876e-06, 'epoch': 4.31}
+{'loss': 1.1005, 'grad_norm': 3.2490522861480713, 'learning_rate': 3.0561797752808986e-06, 'epoch': 4.49}
+{'loss': 1.0912, 'grad_norm': 5.247060298919678, 'learning_rate': 1.9325842696629214e-06, 'epoch': 4.68}
+{'loss': 1.1056, 'grad_norm': 5.241358280181885, 'learning_rate': 8.089887640449439e-07, 'epoch': 4.87}
+{'train_runtime': 211.9594, 'train_samples_per_second': 201.548, 'train_steps_per_second': 12.597, 'train_loss': 1.1727630786681442, 'epoch': 5.0}
+
+Evaluating model on test set...
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.31      0.40       279
+           1       0.53      0.67      0.59       633
+           2       0.37      0.21      0.27       389
+           3       0.46      0.66      0.54       510
+           4       0.66      0.49      0.56       399
+
+    accuracy                           0.51      2210
+   macro avg       0.51      0.47      0.47      2210
+weighted avg       0.51      0.51      0.49      2210
+
+Test Results: {'eval_loss': 1.1187959909439087, 'eval_accuracy': 0.5090497737556561, 'eval_f1': 0.4720888029936905, 'eval_runtime': 4.2533, 'eval_samples_per_second': 519.598, 'eval_steps_per_second': 32.681, 'epoch': 5.0}
+
+Input: I absolutely loved this movie! It was amazing.
+Predicted Label: 4
+
+Input: This film was a complete waste of time.
+Predicted Label: 0

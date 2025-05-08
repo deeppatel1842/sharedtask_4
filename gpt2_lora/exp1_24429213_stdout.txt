@@ -1,0 +1,31 @@
+Starting GPT-2 Lora Training Pipeline
+Tokenizing...
+Starting LoRA fine-tuning...
+{'loss': 3.2257, 'grad_norm': 0.34511953592300415, 'learning_rate': 4.604e-05, 'epoch': 0.4}
+{'loss': 3.2181, 'grad_norm': 0.5355536937713623, 'learning_rate': 4.2040000000000004e-05, 'epoch': 0.8}
+{'loss': 3.1776, 'grad_norm': 0.7002150416374207, 'learning_rate': 3.804e-05, 'epoch': 1.2}
+{'loss': 3.1476, 'grad_norm': 0.6399626135826111, 'learning_rate': 3.404e-05, 'epoch': 1.6}
+{'loss': 3.1496, 'grad_norm': 0.9553515911102295, 'learning_rate': 3.004e-05, 'epoch': 2.0}
+{'loss': 3.1257, 'grad_norm': 0.3581891655921936, 'learning_rate': 2.6040000000000005e-05, 'epoch': 2.4}
+{'loss': 3.1191, 'grad_norm': 0.5080821514129639, 'learning_rate': 2.2040000000000002e-05, 'epoch': 2.8}
+{'loss': 3.1484, 'grad_norm': 0.6799767017364502, 'learning_rate': 1.804e-05, 'epoch': 3.2}
+{'loss': 3.0754, 'grad_norm': 0.49577564001083374, 'learning_rate': 1.4040000000000001e-05, 'epoch': 3.6}
+{'loss': 3.1381, 'grad_norm': 0.4148670434951782, 'learning_rate': 1.004e-05, 'epoch': 4.0}
+{'loss': 3.0967, 'grad_norm': 0.6655737161636353, 'learning_rate': 6.040000000000001e-06, 'epoch': 4.4}
+{'loss': 3.1291, 'grad_norm': 0.4298875033855438, 'learning_rate': 2.0400000000000004e-06, 'epoch': 4.8}
+{'train_runtime': 1495.6892, 'train_samples_per_second': 1.671, 'train_steps_per_second': 0.836, 'train_loss': 3.1441956298828124, 'epoch': 5.0}
+Training complete!
+Train Loss: 3.1441956298828124
+Eval Loss: 2.9618911743164062
+
+ Evaluating model on validation data...
+
+ Perplexity: 19.75
+eval_rouge1: 0.0046
+eval_rouge2: 0.0000
+eval_rougeL: 0.0042
+Running inference on test input...
+
+ Generated text:
+The government announced a new policy to introduce a five-year minimum wage of £12.50, with the top rate at £4.00.
+But some economists have warned the rising price could trigger an exodus of skilled workers who could then move

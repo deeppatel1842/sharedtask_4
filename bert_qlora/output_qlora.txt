@@ -1,0 +1,86 @@
+=== CUDA & GPU ===
+Wed Apr 30 09:43:29 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.05              Driver Version: 560.35.05      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX 6000 Ada Gene...    Off |   00000000:0A:00.0 Off |                  Off |
+| 30%   29C    P8             21W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX 6000 Ada Gene...    Off |   00000000:AE:00.0 Off |                  Off |
+| 30%   23C    P8              4W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2.1.2+cu118
+CUDA available: True
+NVIDIA RTX 6000 Ada Generation
+QLoRA BERT model loaded with 4-bit quantization and LoRA adapters.
+trainable params: 5,361,413 || all params: 114,847,498 || trainable%: 4.6683
+
+Parameter Summary:
+Total parameters       : 72,085,258
+Trainable parameters   : 5,361,413
+Trainable percentage   : 7.44%
+
+{'loss': 1.5997, 'grad_norm': 2.794726848602295, 'learning_rate': 2.8887640449438203e-05, 'epoch': 0.19}
+{'loss': 1.5471, 'grad_norm': 2.625311851501465, 'learning_rate': 2.7764044943820225e-05, 'epoch': 0.37}
+{'loss': 1.5016, 'grad_norm': 5.412376880645752, 'learning_rate': 2.664044943820225e-05, 'epoch': 0.56}
+{'loss': 1.3386, 'grad_norm': 3.964399576187134, 'learning_rate': 2.551685393258427e-05, 'epoch': 0.75}
+{'loss': 1.2364, 'grad_norm': 6.106388568878174, 'learning_rate': 2.439325842696629e-05, 'epoch': 0.94}
+{'loss': 1.2255, 'grad_norm': 6.837214469909668, 'learning_rate': 2.3269662921348316e-05, 'epoch': 1.12}
+{'loss': 1.1624, 'grad_norm': 3.911517858505249, 'learning_rate': 2.2146067415730338e-05, 'epoch': 1.31}
+{'loss': 1.1567, 'grad_norm': 6.875244617462158, 'learning_rate': 2.102247191011236e-05, 'epoch': 1.5}
+{'loss': 1.1512, 'grad_norm': 4.6055989265441895, 'learning_rate': 1.9898876404494385e-05, 'epoch': 1.69}
+{'loss': 1.1572, 'grad_norm': 5.27930212020874, 'learning_rate': 1.8775280898876403e-05, 'epoch': 1.87}
+{'loss': 1.1265, 'grad_norm': 6.637473106384277, 'learning_rate': 1.7651685393258425e-05, 'epoch': 2.06}
+{'loss': 1.1005, 'grad_norm': 5.2914814949035645, 'learning_rate': 1.652808988764045e-05, 'epoch': 2.25}
+{'loss': 1.1377, 'grad_norm': 6.010124683380127, 'learning_rate': 1.5404494382022472e-05, 'epoch': 2.43}
+{'loss': 1.0772, 'grad_norm': 4.932328701019287, 'learning_rate': 1.4280898876404494e-05, 'epoch': 2.62}
+{'loss': 1.0833, 'grad_norm': 6.125608921051025, 'learning_rate': 1.3157303370786516e-05, 'epoch': 2.81}
+{'loss': 1.0812, 'grad_norm': 9.185921669006348, 'learning_rate': 1.203370786516854e-05, 'epoch': 3.0}
+{'loss': 1.0478, 'grad_norm': 5.3572564125061035, 'learning_rate': 1.0910112359550562e-05, 'epoch': 3.18}
+{'loss': 1.0293, 'grad_norm': 7.147114276885986, 'learning_rate': 9.786516853932585e-06, 'epoch': 3.37}
+{'loss': 1.056, 'grad_norm': 3.7788562774658203, 'learning_rate': 8.662921348314607e-06, 'epoch': 3.56}
+{'loss': 1.0806, 'grad_norm': 6.349989891052246, 'learning_rate': 7.539325842696629e-06, 'epoch': 3.75}
+{'loss': 1.0256, 'grad_norm': 5.066323280334473, 'learning_rate': 6.426966292134832e-06, 'epoch': 3.93}
+{'loss': 1.0219, 'grad_norm': 6.393730163574219, 'learning_rate': 5.303370786516854e-06, 'epoch': 4.12}
+{'loss': 1.0128, 'grad_norm': 7.12252140045166, 'learning_rate': 4.179775280898876e-06, 'epoch': 4.31}
+{'loss': 1.0317, 'grad_norm': 4.482973098754883, 'learning_rate': 3.0561797752808986e-06, 'epoch': 4.49}
+{'loss': 1.016, 'grad_norm': 7.412444114685059, 'learning_rate': 1.9325842696629214e-06, 'epoch': 4.68}
+{'loss': 1.0165, 'grad_norm': 6.5074849128723145, 'learning_rate': 8.089887640449439e-07, 'epoch': 4.87}
+{'train_runtime': 493.5442, 'train_samples_per_second': 86.558, 'train_steps_per_second': 5.41, 'train_loss': 1.1506187696135446, 'epoch': 5.0}
+
+Evaluating model on test set...
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.56      0.33      0.41       279
+           1       0.54      0.68      0.60       633
+           2       0.36      0.22      0.27       389
+           3       0.48      0.64      0.55       510
+           4       0.65      0.55      0.60       399
+
+    accuracy                           0.52      2210
+   macro avg       0.52      0.48      0.49      2210
+weighted avg       0.52      0.52      0.51      2210
+
+Test Results: {'eval_loss': 1.0878437757492065, 'eval_accuracy': 0.5217194570135747, 'eval_f1': 0.48764124770938544, 'eval_runtime': 6.5676, 'eval_samples_per_second': 336.499, 'eval_steps_per_second': 21.164, 'epoch': 5.0}
+
+Input: I absolutely loved this movie! It was amazing.
+Predicted Label: 4
+
+Input: This film was a complete waste of time.
+Predicted Label: 0

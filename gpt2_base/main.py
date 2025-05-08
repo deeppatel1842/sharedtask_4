@@ -1,6 +1,6 @@
 from train import run_training
 from test import run_testing
-from evaluation_utils import plot_loss  # ✅ updated import
+from evaluation_utils import plot_loss
 import os
 
 def configure_scratch_cache():
@@ -11,7 +11,7 @@ def configure_scratch_cache():
 
 def main():
     configure_scratch_cache()
-    print("🚀 Starting GPT-2 Training Pipeline")
+    print(" Starting GPT-2 Training Pipeline")
 
     # 1. Train the model and get the trainer object
     trainer = run_training()

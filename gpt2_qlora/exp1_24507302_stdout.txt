@@ -10277,6 +10277,3 @@ Running inference on test input...
 The government announced a new policy to encourage companies to invest in clean energy, including renewables.
 Energy minister Greg Clark said the plan would help clean energy providers build more capacity on renewable farms.
 "Renewable energy is a very powerful way to
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mgpt2-qlora-xsum[0m at: [34mhttps://wandb.ai/rdcoding1842-university-of-oklahoma/gpt2-qlora/runs/8952jfri[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250424_183744-8952jfri/logs[0m

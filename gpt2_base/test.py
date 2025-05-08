@@ -17,5 +17,5 @@ def run_testing(trainer):
     )
 
     generated = tokenizer.decode(output[0], skip_special_tokens=True)
-    print("\n📢 Generated text:")
+    print("\n Generated text:")
     print(generated)

@@ -1,4 +1,4 @@
-🚀 Starting GPT-2 Training Pipeline
+Starting GPT-2 Training Pipeline
 Tokenizing...
 Starting training...
 {'loss': 3.1919, 'learning_rate': 4.600000000000001e-05, 'epoch': 0.4}
@@ -23,14 +23,14 @@ Training complete!
 Train Loss: 2.7379510131835936
 Eval Loss: 3.083571434020996
 
-🔍 Evaluating model on validation data...
+Evaluating model on validation data...
 
-🧠 Perplexity: 22.21
-📏 eval_rouge1: 0.0059
-📏 eval_rouge2: 0.0000
-📏 eval_rougeL: 0.0051
+Perplexity: 22.21
+eval_rouge1: 0.0059
+eval_rouge2: 0.0000
+eval_rougeL: 0.0051
 Running inference on test input...
 
-📢 Generated text:
+Generated text:
 The government announced a new policy to ease the burden of living expenses on taxpayers in April after the government launched the Work and Pensions Select Committee.
 The changes will help to reduce the cost of living but also will help to help households pay their bills

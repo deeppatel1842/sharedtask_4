@@ -1,0 +1,36 @@
+🚀 Starting GPT-2 Training Pipeline
+Tokenizing...
+Starting training...
+{'loss': 3.1919, 'learning_rate': 4.600000000000001e-05, 'epoch': 0.4}
+{'loss': 3.1087, 'learning_rate': 4.2e-05, 'epoch': 0.8}
+{'eval_loss': 2.9835989475250244, 'eval_rouge1': 0.0057876712328767165, 'eval_rouge2': 0.0, 'eval_rougeL': 0.004623287671232881, 'eval_runtime': 44.2339, 'eval_samples_per_second': 2.261, 'eval_steps_per_second': 0.294, 'epoch': 1.0}
+{'loss': 2.9849, 'learning_rate': 3.8e-05, 'epoch': 1.2}
+{'loss': 2.8882, 'learning_rate': 3.4000000000000007e-05, 'epoch': 1.6}
+{'loss': 2.8117, 'learning_rate': 3e-05, 'epoch': 2.0}
+{'eval_loss': 3.006427049636841, 'eval_rouge1': 0.004486301369863018, 'eval_rouge2': 0.0, 'eval_rougeL': 0.0037671232876712356, 'eval_runtime': 36.2522, 'eval_samples_per_second': 2.758, 'eval_steps_per_second': 0.359, 'epoch': 2.0}
+{'loss': 2.6195, 'learning_rate': 2.6000000000000002e-05, 'epoch': 2.4}
+{'loss': 2.7385, 'learning_rate': 2.2000000000000003e-05, 'epoch': 2.8}
+{'eval_loss': 3.0371973514556885, 'eval_rouge1': 0.004246575342465757, 'eval_rouge2': 0.0, 'eval_rougeL': 0.0034589041095890436, 'eval_runtime': 34.2087, 'eval_samples_per_second': 2.923, 'eval_steps_per_second': 0.38, 'epoch': 3.0}
+{'loss': 2.5659, 'learning_rate': 1.8e-05, 'epoch': 3.2}
+{'loss': 2.54, 'learning_rate': 1.4000000000000001e-05, 'epoch': 3.6}
+{'loss': 2.585, 'learning_rate': 1e-05, 'epoch': 4.0}
+{'eval_loss': 3.0673654079437256, 'eval_rouge1': 0.004623287671232879, 'eval_rouge2': 0.0, 'eval_rougeL': 0.004041095890410963, 'eval_runtime': 35.0126, 'eval_samples_per_second': 2.856, 'eval_steps_per_second': 0.371, 'epoch': 4.0}
+{'loss': 2.487, 'learning_rate': 6e-06, 'epoch': 4.4}
+{'loss': 2.4786, 'learning_rate': 2.0000000000000003e-06, 'epoch': 4.8}
+{'eval_loss': 3.083571434020996, 'eval_rouge1': 0.005376712328767126, 'eval_rouge2': 0.0, 'eval_rougeL': 0.005034246575342467, 'eval_runtime': 33.2399, 'eval_samples_per_second': 3.008, 'eval_steps_per_second': 0.391, 'epoch': 5.0}
+{'train_runtime': 11300.5039, 'train_samples_per_second': 0.221, 'train_steps_per_second': 0.111, 'train_loss': 2.7379510131835936, 'epoch': 5.0}
+Training complete!
+Train Loss: 2.7379510131835936
+Eval Loss: 3.083571434020996
+
+🔍 Evaluating model on validation data...
+
+🧠 Perplexity: 22.21
+📏 eval_rouge1: 0.0059
+📏 eval_rouge2: 0.0000
+📏 eval_rougeL: 0.0051
+Running inference on test input...
+
+📢 Generated text:
+The government announced a new policy to ease the burden of living expenses on taxpayers in April after the government launched the Work and Pensions Select Committee.
+The changes will help to reduce the cost of living but also will help to help households pay their bills

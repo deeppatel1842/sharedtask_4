@@ -5,7 +5,7 @@ import evaluate
 import math
 
 
-# 📈 1. Plot training and validation loss
+# Plot training and validation loss
 def plot_loss(train_losses, eval_losses, output_path="experiments/gpt2-loss-curve.png"):
     epochs = range(1, len(train_losses) + 1)
     plt.figure(figsize=(8, 6))
@@ -20,7 +20,7 @@ def plot_loss(train_losses, eval_losses, output_path="experiments/gpt2-loss-curv
     plt.show()
 
 
-# 🧪 2. Compute ROUGE during training
+# Compute ROUGE during training
 rouge = evaluate.load("rouge")
 
 def compute_metrics(eval_preds):
@@ -38,19 +38,19 @@ def compute_metrics(eval_preds):
     }
 
 
-# 📊 3. Evaluate final model (Perplexity + ROUGE)
+# Evaluate final model (Perplexity + ROUGE)
 def evaluate_model(trainer, eval_dataset):
-    print("\n🔍 Evaluating model on validation data...")
+    print("\n Evaluating model on validation data...")
 
     eval_results = trainer.evaluate(eval_dataset=eval_dataset)
 
     # Calculate perplexity
     perplexity = math.exp(eval_results["eval_loss"]) if eval_results["eval_loss"] < 100 else float("inf")
-    print(f"\n🧠 Perplexity: {perplexity:.2f}")
+    print(f"\n Perplexity: {perplexity:.2f}")
 
     for key in eval_results:
         if key.startswith("eval_rouge"):
-            print(f"📏 {key}: {eval_results[key]:.4f}")
+            print(f" {key}: {eval_results[key]:.4f}")
 
     return perplexity, {k: eval_results[k] for k in eval_results if k.startswith("eval_rouge")}
 

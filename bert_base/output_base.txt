@@ -1,0 +1,72 @@
+{'loss': 1.2571, 'learning_rate': 1.3757802746566792e-05, 'epoch': 0.94}
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.39      0.60      0.47       139
+           1       0.56      0.36      0.44       289
+           2       0.41      0.20      0.26       229
+           3       0.42      0.61      0.50       279
+           4       0.49      0.56      0.52       165
+
+    accuracy                           0.45      1101
+   macro avg       0.45      0.46      0.44      1101
+weighted avg       0.46      0.45      0.43      1101
+
+{'eval_loss': 1.2138726711273193, 'eval_accuracy': 0.44868301544050865, 'eval_f1': 0.4392579441371023, 'eval_runtime': 17.7514, 'eval_samples_per_second': 62.023, 'eval_steps_per_second': 3.887, 'epoch': 1.0}
+{'loss': 1.0102, 'learning_rate': 7.515605493133583e-06, 'epoch': 1.87}
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.46      0.31      0.37       139
+           1       0.52      0.62      0.56       289
+           2       0.44      0.31      0.36       229
+           3       0.48      0.59      0.53       279
+           4       0.54      0.50      0.52       165
+
+    accuracy                           0.49      1101
+   macro avg       0.49      0.47      0.47      1101
+weighted avg       0.49      0.49      0.48      1101
+
+{'eval_loss': 1.1747283935546875, 'eval_accuracy': 0.49227974568574023, 'eval_f1': 0.47001798151750923, 'eval_runtime': 17.9288, 'eval_samples_per_second': 61.409, 'eval_steps_per_second': 3.849, 'epoch': 2.0}
+{'loss': 0.8579, 'learning_rate': 1.2734082397003748e-06, 'epoch': 2.81}
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.48      0.42      0.45       139
+           1       0.55      0.56      0.56       289
+           2       0.41      0.33      0.36       229
+           3       0.50      0.61      0.55       279
+           4       0.56      0.53      0.54       165
+
+    accuracy                           0.50      1101
+   macro avg       0.50      0.49      0.49      1101
+weighted avg       0.50      0.50      0.50      1101
+
+{'eval_loss': 1.2236851453781128, 'eval_accuracy': 0.5022706630336058, 'eval_f1': 0.4914084304919847, 'eval_runtime': 18.399, 'eval_samples_per_second': 59.84, 'eval_steps_per_second': 3.75, 'epoch': 3.0}
+{'train_runtime': 2081.5951, 'train_samples_per_second': 12.314, 'train_steps_per_second': 0.77, 'train_loss': 1.0275886526119695, 'epoch': 3.0}
+
+Evaluating model on test set...
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.53      0.42      0.47       279
+           1       0.56      0.59      0.58       633
+           2       0.34      0.31      0.32       389
+           3       0.50      0.65      0.56       510
+           4       0.68      0.52      0.59       399
+
+    accuracy                           0.52      2210
+   macro avg       0.52      0.50      0.50      2210
+weighted avg       0.53      0.52      0.52      2210
+
+Test Results: {'eval_loss': 1.1279597282409668, 'eval_accuracy': 0.5203619909502263, 'eval_f1': 0.5043808588652492, 'eval_runtime': 37.2078, 'eval_samples_per_second': 59.396, 'eval_steps_per_second': 3.736, 'epoch': 3.0}
+
+Input: I absolutely loved this movie! It was amazing.
+Predicted Label: 4
+
+Input: This film was a complete waste of time.
+Predicted Label: 0

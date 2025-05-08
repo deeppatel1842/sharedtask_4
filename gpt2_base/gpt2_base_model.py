@@ -102,7 +102,7 @@ class GPT2BaseTrainer:
 
         plot_loss(self.train_losses, self.eval_losses)
 
-        # 🔥 Run final ROUGE + Perplexity Evaluation
+        # Run final ROUGE + Perplexity Evaluation
         evaluate_model(
             trainer,
             self.tokenized_dataset["validation"].select(range(1000))
